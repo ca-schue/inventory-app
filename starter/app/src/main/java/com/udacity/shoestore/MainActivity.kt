@@ -25,16 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         Timber.plant(Timber.DebugTree())
 
-        /*val navController = this.findNavController(R.id.navHostFragment)
-        val appBarConfiguration: AppBarConfiguration = AppBarConfiguration.Builder(navController.graph)
-            .build()
-        NavigationUI.setupWithNavController(binding.toolbar, navController, appBarConfiguration)
-        navController.addOnDestinationChangedListener { controller: NavController?, destination: NavDestination, arguments: Bundle? ->
-            binding.toolbar.title = destination.label
-            val isLoginDestination = destination.id == R.id.loginFragment
-            supportActionBar?.setDisplayHomeAsUpEnabled(!isLoginDestination)
-        }*/
-
         val navController = Navigation.findNavController(this, R.id.navHostFragment)
         val appBarConfiguration = AppBarConfiguration.Builder(navController.graph).build()
         val toolbar = findViewById<Toolbar>(R.id.toolbar)

@@ -37,6 +37,11 @@
         <action
             android:id="@+id/action_listingsFragment_to_addShoeFragment"
             app:destination="@id/addShoeFragment" />
+        <action
+            android:id="@+id/action_listingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/addShoeFragment"
@@ -44,9 +49,13 @@
         android:label="AddShoeFragment" >
         <action
             android:id="@+id/action_addShoeFragment_to_listingsFragment_cancel"
-            app:destination="@id/listingsFragment" />
+            app:destination="@id/listingsFragment"
+            app:popUpTo="@id/listingsFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_addShoeFragment_to_listingsFragment_save"
-            app:destination="@id/listingsFragment" />
+            app:destination="@id/listingsFragment"
+            app:popUpTo="@id/listingsFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
