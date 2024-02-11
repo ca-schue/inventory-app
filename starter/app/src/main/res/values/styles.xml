@@ -16,4 +16,30 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="text_paragraph_style">
+        <item name="android:fontFamily">@font/wellfleet</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:layout_marginLeft">@dimen/very_big_margin</item>
+        <item name="android:layout_marginRight">@dimen/very_big_margin</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_headline_style">
+        <item name="android:fontFamily">@font/wellfleet</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">#003549</item>
+        <item name="android:fontFamily">@font/wellfleet</item>
+        <item name="android:paddingLeft">@dimen/big_padding</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingRight">@dimen/big_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/design_default_color_background</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
 </resources>

@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/design_default_color_secondary">
 
         <TextView
             android:id="@+id/welcome_text"
+            style="@style/text_headline_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/welcome_text" />
+            android:text="@string/welcome_text"
+            app:layout_constraintBottom_toTopOf="@+id/welcome_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/welcome_name"
-            android:layout_width="match_parent"
+            style="@style/text_paragraph_style"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="TODO: DataBinding" />
+            android:text="@string/welcome_paragraph"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/how_to_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
 
         <Button
             android:id="@+id/how_to_button"
+            style="@style/button_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/how_to_button" />
-    </LinearLayout>
+            android:text="@string/how_to_button"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

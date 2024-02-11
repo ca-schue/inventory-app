@@ -4,11 +4,14 @@
     <string name="login_password_hint">Enter password ...</string>
     <string name="login_button">Login</string>
     <string name="register_button">Register</string>
-    <string name="welcome_text">Welcome</string>
-    <string name="how_to_button">How to play</string>
-    <string name="instructions_text_1">Bla bla 1</string>
-    <string name="instructions_text_2">Bla bla 2</string>
-    <string name="listings_button">List shoes</string>
+    <string name="welcome_text">Welcome to our\nShoe Inventory!</string>
+    <string name="how_to_button">Let\'s Get Started!</string>
+    <string name="instructions_text_1">How does\nthis work?</string>
+    <string name="instructions_text_2">
+        "Seems complicated? Not at all!
+        View your shoe collection by clicking the button below. After clicking the button in the bottom right corner, input all the details of your latest pairs and add them to the listing. If you change your mind, you can cancel your current workflow or log out.
+    </string>
+    <string name="listings_button">View your Shoe Collection</string>
     <string name="debug_listing_text">TextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextViewTextView </string>
     <string name="shoe_name_label">Shoe Name</string>
     <string name="shoe_company_label">Brand</string>
@@ -17,5 +20,5 @@
     <string name="save_shoe_button">Save</string>
     <string name="cancel_button">Cancel</string>
     <string name="logout_menu_text">Logout</string>
-    <string name="logout_button_text">Logout</string>
+    <string name="welcome_paragraph">We\'re thrilled to have you on board. Whether you\'re a casual collector or a dedicated enthusiast, our app is here to streamline your shoe inventory management process. Need guidance? Just hit the button below to access our instructions page and get started. Happy organizing!</string>
 </resources>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -25,8 +26,9 @@ class AddShoeFragment: Fragment() {
             inflater, R.layout.fragment_add_shoe, container, false)
 
         binding.saveShoeButton.setOnClickListener{
-            addNewShoe()
-            Navigation.findNavController(it).navigate(R.id.action_addShoeFragment_to_listingsFragment_save)
+            if (addNewShoe()) {
+                Navigation.findNavController(it).navigate(R.id.action_addShoeFragment_to_listingsFragment_save)
+            }
         }
         binding.cancelButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_addShoeFragment_to_listingsFragment_cancel))
 
@@ -35,12 +37,21 @@ class AddShoeFragment: Fragment() {
         return binding.root
     }
 
-    private fun addNewShoe() {
+    private fun addNewShoe(): Boolean {
         var name : String = binding.shoeNameEditText.text.toString()
-        var size : Double = binding.shoeSizeEditText.text.toString().toDouble()
+        var sizeString : String = binding.shoeSizeEditText.text.toString()
         var company : String = binding.shoeCompanyEditText.text.toString()
         var description : String = binding.shoeDescriptionText.text.toString()
-
+        if(name.isBlank() || sizeString.isBlank() || company.isBlank()) {
+            Toast.makeText(requireContext(),"Please insert name, brand and size of your shoe",Toast.LENGTH_LONG).show()
+            return false
+        }
+        var size = sizeString.toDouble()
+        if (size.isNaN()) {
+            Toast.makeText(requireContext(),"Please insert a valid shoe size",Toast.LENGTH_LONG).show()
+            return false
+        }
         viewModel.addShoe(name, size, company, description)
+        return true
     }
 }
