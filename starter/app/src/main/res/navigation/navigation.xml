@@ -11,6 +11,10 @@
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -20,15 +24,23 @@
         android:label="Welcome" >
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
-            app:destination="@id/instructionsFragment" />
+            app:destination="@id/instructionsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.udacity.shoestore.InstructionsFragment"
-        android:label="How to play" >
+        android:label="Instructions">
         <action
             android:id="@+id/action_instructionsFragment_to_listingsFragment"
-            app:destination="@id/listingsFragment" />
+            app:destination="@id/listingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/listingsFragment"
@@ -36,7 +48,11 @@
         android:label="Shoes" >
         <action
             android:id="@+id/action_listingsFragment_to_addShoeFragment"
-            app:destination="@id/addShoeFragment" />
+            app:destination="@id/addShoeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
         <action
             android:id="@+id/action_listingsFragment_to_loginFragment"
             app:destination="@id/loginFragment"
@@ -46,7 +62,7 @@
     <fragment
         android:id="@+id/addShoeFragment"
         android:name="com.udacity.shoestore.AddShoeFragment"
-        android:label="AddShoeFragment" >
+        android:label="Add new Shoe">
         <action
             android:id="@+id/action_addShoeFragment_to_listingsFragment_cancel"
             app:destination="@id/listingsFragment"
@@ -55,6 +71,10 @@
         <action
             android:id="@+id/action_addShoeFragment_to_listingsFragment_save"
             app:destination="@id/listingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
             app:popUpTo="@id/listingsFragment"
             app:popUpToInclusive="true" />
     </fragment>
