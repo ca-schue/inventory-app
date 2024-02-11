@@ -49,4 +49,5 @@ This project additionally serves as a submission for the Udacity Nanodegree "And
 
 
 ## Sources
-Sneaker icons taken from https://www.svgrepo.com
+- Sneaker icons taken from https://www.svgrepo.com
+- Animation snippets taken from [Udactiy "Guess It" App](https://github.com/udacity/andfun-kotlin-guess-it)
